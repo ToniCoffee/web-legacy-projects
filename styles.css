@@ -1,7 +1,7 @@
 @import 'styles/reset.css';
 @import 'styles/util.css';
 @import 'styles/anims.css';
-@import 'styles/mode/default.css';
+@import 'styles/mode/dark.css';
 
 body {
   background-color: var(--body-bg-color);
@@ -24,12 +24,12 @@ h1 {
 }
 
 h2 {
-  font-size: min(1.4em, 7vw);
+  font-size: min(1.4em, 6vw);
   font-weight: 400;
 }
 
 h3 {
-  font-size: min(1.1em, 7vw);
+  font-size: min(1.1em, 4vw);
   font-weight: 400;
   color: var(--headings-color-1);
 }
@@ -57,7 +57,7 @@ table {
   width: fit-content;
   margin: 0em auto 1em auto;
   padding-bottom: 1em;
-  font-size: min(.8em, 7vw);
+  font-size: min(.8em, 2.25vw);
   border-collapse: separate;
   text-align: center;
   color: var(--table-color);
@@ -104,7 +104,7 @@ table td, table th {
   color: #777;
   text-align: center;
   font-weight: bold;
-  font-size: min(1.075em, 7vw);
+  font-size: min(1.075em, 4.5vw);
   vertical-align: middle;
 }
 
@@ -146,6 +146,22 @@ table td, table th {
 
 #cbox-nodejs:checked ~ table {
   display: block;
+}
+
+@media screen and (min-width: 540px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  h3 {
+    font-size: min(1.25em, 4vw);
+  }
+
+  table {
+    font-size: min(1em, 2.25vw);
+  }
 }
 
 @media screen and (min-width: 1024px) {

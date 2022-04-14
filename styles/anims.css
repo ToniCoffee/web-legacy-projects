@@ -1,0 +1,36 @@
+.anim-rotate-linear {
+  animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.anim-typewritter {
+  border-right: 4px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewritter 2s steps(26), blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-right: 4px solid #0c0c0c;
+  }
+}
+
+@keyframes typewritter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

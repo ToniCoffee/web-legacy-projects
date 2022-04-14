@@ -1,0 +1,72 @@
+:root {
+  --card-bg-color: #fcfcfc;
+  --card-border: 1px solid transparent;
+  --card-box-shadow: 0px 0px 5px #aaa;
+  --card1-bg-color: #f2f0ff;
+  --card1-border: 1px solid transparent;
+  --card1-box-shadow: 0px 0px 5px #aaa;
+  --card2-bg-color: #e8e6f5;
+  --card2-border: 1px solid transparent;
+  --card2-box-shadow: 0px 0px 5px #aaa;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border-radius: 7px;
+  box-shadow: var(--card-box-shadow);
+  border: var(--card-border);
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.card-1 {
+  background-color: var(--card1-bg-color);
+  border-radius: 7px;
+  box-shadow: var(--card1-box-shadow);
+  border: var(--card1-border);
+  margin: 1em auto;
+  /* padding: 1em; */
+}
+
+.card-2 {
+  background-color: var(--card2-bg-color);
+  border-radius: 7px;
+  box-shadow: var(--card2-box-shadow);
+  border: var(--card2-border);
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.txt-ctr {
+  text-align: center;
+}
+
+.txt-jst {
+  text-align: justify;
+}
+
+.txt-rgt {
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.before-sep::before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 1px;
+  margin: 0em auto 1em auto;
+  background-color: #aaa;
+}
+
+.after-sep::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 1px;
+  margin: 1em auto 0em auto;
+  background-color: #aaa;
+}

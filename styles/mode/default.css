@@ -1,0 +1,16 @@
+:root {
+  --card-bg-color: #fcfcfd;
+  --card1-bg-color: #f7f6fd;
+  --body-bg-color: #eeeeee;
+  --headings-text-shadow: 2px 2px 2px #b9b9b9;
+  --headings-color: #222222;
+  --headings-color-1: #646464;
+  --table-color: #202020;
+  --table-bg-color: var(--card-bg-color);
+  --table-border: 1px solid #aaa;
+  --logo-box-shadow: 0px 0px 10px #aaa;
+  --logo-border: 1px solid #aaa;
+  --logo-bg-color: #eee;
+  --section-hover-bg-color: #e2eafd;
+  --section-hover-border: 1px solid #9aceb5;
+}

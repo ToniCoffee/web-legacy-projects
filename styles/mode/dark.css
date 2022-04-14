@@ -1,0 +1,18 @@
+:root {
+  --card-bg-color: #1a1a1a;
+  --card-box-shadow: 0px 0px 5px #444444;
+  --card1-box-shadow: var(--card-box-shadow);
+  --card1-bg-color: #2c2c2c;
+  --body-bg-color: #111;
+  --headings-text-shadow: 2px 2px 2px #505050;
+  --headings-color: #ddd;
+  --headings-color-1: #c7c7c7;
+  --table-color: var(--headings-color);
+  --table-bg-color: #3f3f3f;
+  --table-border: 1px solid #777;
+  --logo-box-shadow: 0px 0px 10px #aaa;
+  --logo-border: 1px solid #aaa;
+  --logo-bg-color: #bbb;
+  --section-hover-bg-color: #272727;
+  --section-hover-border: 1px solid #9aceb5;
+}

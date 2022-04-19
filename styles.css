@@ -152,6 +152,10 @@ table td, table th {
   .wrapper {
     width: 90%;
   }
+
+  table {
+    font-size: min(.5em, 2.25vw);
+  }
 }
 
 @media screen and (min-width: 625px) {
@@ -160,7 +164,7 @@ table td, table th {
   }
 
   table {
-    font-size: min(1em, 2.25vw);
+    font-size: min(.6em, 2.25vw);
   }
 }
 

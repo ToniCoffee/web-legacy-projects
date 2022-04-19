@@ -53,33 +53,6 @@ h3 {
   border: var(--section-hover-border);
 }
 
-table {
-  width: fit-content;
-  margin: 0em auto 1em auto;
-  padding-bottom: 1em;
-  font-size: min(.8em, 2.25vw);
-  border-collapse: separate;
-  text-align: center;
-  color: var(--table-color);
-}
-
-table caption {
-  width: fit-content;
-  margin: 0em auto .25em auto;
-  padding: .5em 1em;
-  font-weight: bold;
-  border-radius: 5px;
-  background-color: var(--table-bg-color);
-  border: var(--table-border);
-}
-
-table td, table th {
-  border: var(--table-border);
-  background-color: var(--table-bg-color);
-  border-radius: 5px;
-  padding: .5em;
-}
-
 .header-welcome div {
   box-shadow: var(--logo-box-shadow);
   background-color: var(--logo-bg-color);
@@ -112,59 +85,87 @@ table td, table th {
   cursor: pointer;
 }
 
-.section-projects table {
+.section-projects .projects {
   display: none;
+}
+
+.projects {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 90%;
+  margin: 0em auto 1em auto;
+  text-align: center;
+  font-weight: bold;
+  color: var(--table-color);
+  font-size: min(.8em, 3vw);
+}
+
+.projects > * {
+  border: var(--table-border);
+  background-color: var(--table-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.projects img {
+  filter: invert();
+  width: 16px;
+}
+
+.projects a:hover {
+  background-color: var(--section-hover-bg-color);
+  border: var(--section-hover-border);
 }
 
 #cbox-js {
   display: none;
 }
 
-#cbox-js:checked ~ table {
-  display: block;
+#cbox-js:checked ~ .projects {
+  display: grid;
 }
 
 #cbox-react {
   display: none;
 }
 
-#cbox-react:checked ~ table {
-  display: block;
+#cbox-react:checked ~ .projects {
+  display: grid;
 }
 
 #cbox-angular {
   display: none;
 }
 
-#cbox-angular:checked ~ table {
-  display: block;
+#cbox-angular:checked ~ .projects {
+  display: grid;
 }
 
 #cbox-nodejs {
   display: none;
 }
 
-#cbox-nodejs:checked ~ table {
-  display: block;
+#cbox-nodejs:checked ~ .projects {
+  display: grid;
+}
+
+@media screen and (min-width: 350px) {
+  .projects img {
+    width: unset;
+  }
 }
 
 @media screen and (min-width: 540px) {
   .wrapper {
     width: 90%;
   }
-
-  table {
-    font-size: min(.5em, 2.25vw);
-  }
 }
 
 @media screen and (min-width: 625px) {
   h3 {
     font-size: min(1.25em, 4vw);
-  }
-
-  table {
-    font-size: min(.6em, 2.25vw);
   }
 }
 

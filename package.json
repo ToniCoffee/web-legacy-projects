@@ -1,12 +1,12 @@
 {
-  "name": "web-site",
+  "name": "tonicoffee.github.io",
   "version": "1.0.0",
   "description": "My project web site",
-  "main": "index.js",
-  "scripts": {
+	"private": true,
+	"scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "ToniCoffee",
   "license": "ISC"
 }
